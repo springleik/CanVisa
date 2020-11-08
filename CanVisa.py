@@ -27,12 +27,10 @@ print ('Usage: python3 CanVisa.py [arg names and values]')
 print ('  arg name | arg value')
 print ('  ---------|----------')
 print ('  -node    | CAN node number   (default is 46)')
-print ('  -indx    | CAN SDO index     (default is 0x6000)')
 print ('  -visa    | VISA descriptor   (default is USB0...)')
 
 # set defaults
 theNode = 46
-theIndx = 0x6000
 theVisa = 'USB0::1510::8752::9032100::0::INSTR'
 
 # check for user inputs on command line
@@ -41,8 +39,6 @@ print ('Running script: "{0}" in Python:\n {1}'.format(next(args), sys.version))
 for arg in args:
 	if '-node' == arg:
 		theNode = int(next(args, theNode), 0)
-	elif '-indx' == arg:
-		theIndx = int(next(args, theIndx), 0)
 	elif '-visa' == arg:
 		theVisa = next(args, theVisa)
 	else:
@@ -69,7 +65,6 @@ def checkTree(msg):
 		if subidx in subTree:
 			subTree = subTree[subidx]
 			if command in subTree:
-			
 				# now we know what to do
 				what = subTree[command]
 				if 0x40 == command:
