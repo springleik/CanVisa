@@ -1,0 +1,28 @@
+[General]
+Version=5
+
+[LoggingToFile]
+Interval_sec=3
+File=C:\Users\mwilliamsen\Desktop\MultiVu Data Files\CANOpener.dat
+Title=CANOpener Data File
+
+[SDOs]
+Enabled,Node,Description,Index,Sub Index,Type,ByteOffset,R/W,Read Format,Read Data,Read Status,Write Data,Write Status,isHeading,isHighlighted
+True,,Channel 1 Power Supply,,,,,,,,,,,True,False
+True,46,Ch 1 Voltage Set,0x6001,0x1,Float-32,0,RW,Decimal,0.1,Success,,,False,False
+True,46,Ch 1 Current Set,0x6001,0x2,Float-32,0,RW,Decimal,1.234,Success,,,False,False
+True,46,Ch 1 Voltage Meas,0x6001,0x3,Float-32,0,RO,Decimal,0.0986891,Success,,,False,False
+True,46,Ch 1 Current Meas,0x6001,0x4,Float-32,0,RO,Decimal,0.0121069,Success,,,False,False
+True,46,Ch 1 Power Meas,0x6001,0x5,Float-32,0,RO,Decimal,0.00119511,Success,,,False,False
+True,,Channel 2 Power Supply,,,,,,,,,,,True,False
+True,46,Ch 2 Voltage Set,0x6002,0x1,Float-32,0,RW,Decimal,0.1,Success,,,False,False
+True,46,Ch 2 Current Set,0x6002,0x2,Float-32,0,RW,Decimal,1.234,Success,,,False,False
+True,46,Ch 2 Voltage Meas,0x6002,0x3,Float-32,0,RO,Decimal,0.0986891,Success,,,False,False
+True,46,Ch 2 Current Meas,0x6002,0x4,Float-32,0,RO,Decimal,0.0121069,Success,,,False,False
+True,46,Ch 2 Power Meas,0x6002,0x5,Float-32,0,RO,Decimal,0.00119511,Success,,,False,False
+True,,Channel 3 Power Supply,,,,,,,,,,,True,False
+True,46,Ch 3 Voltage Set,0x6003,0x1,Float-32,0,RW,Decimal,0.1,Success,,,False,False
+True,46,Ch 3 Current Set,0x6003,0x2,Float-32,0,RW,Decimal,1.234,Success,,,False,False
+True,46,Ch 3 Voltage Meas,0x6003,0x3,Float-32,0,RO,Decimal,0.0986891,Success,,,False,False
+True,46,Ch 3 Current Meas,0x6003,0x4,Float-32,0,RO,Decimal,0.0121069,Success,,,False,False
+True,46,Ch 3 Power Meas,0x6003,0x5,Float-32,0,RO,Decimal,0.00119511,Success,,,False,False

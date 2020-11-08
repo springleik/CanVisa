@@ -1,0 +1,9 @@
+Channel1=46,0x6001,0x3,FLT,Ch 1 Volts
+Channel2=46,0x6001,0x4,FLT,Ch 1 Amps
+Channel3=46,0x6001,0x5,FLT,Ch 1 Watts
+Channel4=46,0x6002,0x3,FLT,Ch 2 Volts
+Channel5=46,0x6002,0x4,FLT,Ch 2 Amps
+Channel6=46,0x6002,0x5,FLT,Ch 2 Watts
+Channel7=46,0x6003,0x3,FLT,Ch 3 Volts
+Channel8=46,0x6003,0x4,FLT,Ch 3 Amps
+Channel9=46,0x6003,0x5,FLT,Ch 3 Watts
